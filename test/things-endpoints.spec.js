@@ -3,7 +3,7 @@ const app = require('../src/app')
 const helpers = require('./test-helpers')
 const bcrypt = require('bcryptjs')
 
-describe('Things Endpoints', function() {
+describe.only('Things Endpoints', function() {
   let db
 
   const {
@@ -88,7 +88,7 @@ describe('Things Endpoints', function() {
 
   describe(`GET /api/things/:thing_id`, () => {
     context(`Given no things`, () => {
-      
+
       it(`responds with 404`, () => {
         const thingId = 123456
         return supertest(app)
