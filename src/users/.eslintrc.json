@@ -2,8 +2,7 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true,
-        "mocha": true
+        "es6": true
     },
     "extends": [
         "standard"
@@ -16,6 +15,5 @@
         "ecmaVersion": 2018
     },
     "rules": {
-      "comma-dangle": ["error","multiline-only"]
     }
 }
